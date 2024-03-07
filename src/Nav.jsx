@@ -36,8 +36,8 @@ export function Nav({keyCount, clickEvent}) {
             <swiper-slide key={i}>
                 <motion.div
                     className={"pill"}
-                    whileHover={{scale: 1.3}}
-                    whileTap={{scale: 0.85}}
+                    whileHover={{scale: 1.5}}
+                    whileTap={{scale: 0.5}}
                     animate={{opacity: 1}}
                     onClick={clickEvent}
                 ></motion.div>
