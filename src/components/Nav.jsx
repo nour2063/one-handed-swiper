@@ -20,7 +20,7 @@ export function Nav({keyCount, clickEvent}) {
                     width: 4em;
                     height: 2em;
                     padding: 1em 0;
-                    top: 3.5em;
+                    top: 3em;
                 `,
             ],
         };
@@ -32,7 +32,7 @@ export function Nav({keyCount, clickEvent}) {
     let keys = [];
     for (let i = 0; i < keyCount; i++) {
         keys.push(
-            <swiper-slide>
+            <swiper-slide key={i}>
                 <motion.div
                     className={"pill"}
                     whileHover={{scale: 1.3}}
