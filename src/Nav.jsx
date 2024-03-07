@@ -11,6 +11,7 @@ export function Nav({keyCount, clickEvent}) {
         const swiperContainer = swiperRef.current;
         const params = {
             navigation: true,
+            threshold: 5, // in px
             injectStyles: [
                 `
                   .swiper-button-next,
@@ -44,7 +45,7 @@ export function Nav({keyCount, clickEvent}) {
         );
     }
     return (
-        <swiper-container thumbs-swiper={".my-thumbs"} class={"nav"} init="false" ref={swiperRef}>
+        <swiper-container thumbs-swiper={".my-thumbs"} class={"nav"} init={"false"} ref={swiperRef}>
             {keys}
         </swiper-container>
     );
