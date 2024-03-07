@@ -5,10 +5,10 @@ import {Nav} from "./components/Nav";
 function App() {
 
   return (
-    <>
+    <div className={'App'}>
         <Menu/>
         <Nav keyCount={9}/>
-    </>
+    </div>
   );
 }
 

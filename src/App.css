@@ -1,16 +1,13 @@
-body {
-  background: #eee;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  color: #000;
-  margin: 0;
-  padding: 0;
+.App {
+  height: 100dvh;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .my-thumbs {
+  margin-top: 5em;
   width: 20em;
   height: 30em;
-  margin-top: 7em;
   pointer-events: none;
 }
 
@@ -27,7 +24,7 @@ swiper-slide {
 
 .nav {
   background-color: gray;
-  position: fixed;
+  position: absolute;
   bottom: 0;
   width: 100dvw;
   * {
