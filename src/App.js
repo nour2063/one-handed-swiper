@@ -9,7 +9,6 @@ function App() {
         function selectCard() {
             const swiperContainer = menuRef.current;
             const activeCard = swiperContainer.childNodes[swiperContainer.swiper.activeIndex];
-            console.log(activeCard)
             if (activeCard.style.backgroundColor !== 'mediumseagreen') {
                 activeCard.style['background-color'] = 'mediumseagreen';
             }
