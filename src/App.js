@@ -1,5 +1,5 @@
 import './App.css';
-import {Nav} from "./components/Nav";
+import {Nav} from "./Nav";
 import {useRef} from "react";
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
             }
             setTimeout(function(){
                 if (activeCard.style.backgroundColor === 'mediumseagreen') {
-                    activeCard.style['background-color'] = 'darksalmon';
+                    activeCard.style['background-color'] = 'rgba(0,0,0,0)';
                 }
             }, 500);
         }
@@ -24,18 +24,17 @@ function App() {
       <div className={'App'}>
 
           <swiper-container class={"my-thumbs"} effect={"cards"} ref={menuRef}>
-              <swiper-slide>Slide 1</swiper-slide>
-              <swiper-slide>Slide 2</swiper-slide>
-              <swiper-slide>Slide 3</swiper-slide>
-              <swiper-slide>Slide 4</swiper-slide>
-              <swiper-slide>Slide 5</swiper-slide>
-              <swiper-slide>Slide 6</swiper-slide>
-              <swiper-slide>Slide 7</swiper-slide>
-              <swiper-slide>Slide 8</swiper-slide>
-              <swiper-slide>Slide 9</swiper-slide>
+              <swiper-slide></swiper-slide>
+              <swiper-slide></swiper-slide>
+              <swiper-slide></swiper-slide>
+              <swiper-slide></swiper-slide>
+              <swiper-slide></swiper-slide>
+              <swiper-slide></swiper-slide>
+              <swiper-slide></swiper-slide>
+              <swiper-slide></swiper-slide>
           </swiper-container>
 
-          <Nav keyCount={9} clickEvent={selectCard} />
+          <Nav keyCount={8} clickEvent={selectCard} />
 
       </div>
   );

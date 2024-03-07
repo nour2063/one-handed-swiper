@@ -8,7 +8,7 @@
 .my-thumbs {
   margin-top: 2em;
   width: 20em;
-  height: 30em;
+  height: 29.5em;
   pointer-events: none;
 }
 
@@ -20,7 +20,37 @@ swiper-slide {
   font-size: 22px;
   font-weight: bold;
   color: #fff;
-  background-color: darksalmon;
+  background-color: rgba(0,0,0,0);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+}
+
+swiper-slide:nth-child(1) {
+  background-image: url("static/J2.png");
+}
+swiper-slide:nth-child(2) {
+  background-image: url("static/2.2.png");
+}
+swiper-slide:nth-child(3) {
+  background-image: url("static/4.5.png");
+}
+swiper-slide:nth-child(4) {
+  background-image: url("static/K4.png");
+}
+swiper-slide:nth-child(5) {
+  background-image: url("static/A.5.png");
+}
+swiper-slide:nth-child(6) {
+  background-image: url("static/2.7.png");
+}
+swiper-slide:nth-child(7) {
+  background-image: url("static/Q7.png");
+}
+swiper-slide:nth-child(8) {
+  background-image: url("static/6.4.png");
 }
 
 .nav {
@@ -33,6 +63,7 @@ swiper-slide {
   * {
     height: 5em;
     background-color: rgba(0,0,0,0);
+    background-image: unset !important;
     fill: white;
   }
 }
