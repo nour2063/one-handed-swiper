@@ -23,14 +23,14 @@ function App() {
       <div className={'App'}>
 
           <swiper-container class={"my-thumbs"} effect={"cards"} ref={menuRef}>
-              <swiper-slide></swiper-slide>
-              <swiper-slide></swiper-slide>
-              <swiper-slide></swiper-slide>
-              <swiper-slide></swiper-slide>
-              <swiper-slide></swiper-slide>
-              <swiper-slide></swiper-slide>
-              <swiper-slide></swiper-slide>
-              <swiper-slide></swiper-slide>
+              <swiper-slide />
+              <swiper-slide />
+              <swiper-slide />
+              <swiper-slide />
+              <swiper-slide />
+              <swiper-slide />
+              <swiper-slide />
+              <swiper-slide />
           </swiper-container>
 
           <Nav keyCount={8} clickEvent={selectCard} />
