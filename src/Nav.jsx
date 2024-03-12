@@ -25,7 +25,6 @@ export function Nav({keyCount, clickEvent}) {
                 `,
             ],
         };
-
         Object.assign(swiperContainer, params);
         swiperContainer.initialize();
     }, []);
@@ -38,9 +37,8 @@ export function Nav({keyCount, clickEvent}) {
                     className={"pill"}
                     whileHover={{scale: 1.5}}
                     whileTap={{scale: 0.5}}
-                    animate={{opacity: 1}}
                     onClick={clickEvent}
-                ></motion.div>
+                />
             </swiper-slide>
         );
     }
